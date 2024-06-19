@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HealthCare Survey</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>HealthCare Product Launch Survey</h1>
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="total_income">Total Income (NGN):</label>
+        <input type="text" id="total_income" name="total_income" required>
+      </div>
+      <h3>Expenses:</h3>
+      <div class="form-group">
+        <label for="utilities">Utilities (NGN):</label>
+        <input type="text" id="utilities" name="utilities">
+      </div>
+      <div class="form-group">
+        <label for="entertainment">Entertainment (NGN):</label>
+        <input type="text" id="entertainment" name="entertainment">
+      </div>
+      <div class="form-group">
+        <label for="school_fees">School Fees (NGN):</label>
+        <input type="text" id="school_fees" name="school_fees">
+      </div>
+      <div class="form-group">
+        <label for="shopping">Shopping (NGN):</label>
+        <input type="text" id="shopping" name="shopping">
+      </div>
+      <div class="form-group">
+        <label for="healthcare">Healthcare (NGN):</label>
+        <input type="text" id="healthcare" name="healthcare">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
